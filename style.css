@@ -1,0 +1,261 @@
+/* =========================
+   Happy Birthday Alok
+   style.css
+========================= */
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    background:linear-gradient(135deg,#0f172a,#1e293b,#312e81);
+    color:white;
+    text-align:center;
+    overflow-x:hidden;
+}
+
+/* Hero Section */
+
+.hero{
+    padding:70px 20px;
+}
+
+.hero h1{
+    font-size:55px;
+    color:#ffd700;
+    animation:glow 2s infinite alternate;
+}
+
+.subtitle{
+    margin-top:20px;
+    font-size:22px;
+    color:#e5e7eb;
+}
+
+/* Glowing Text */
+
+@keyframes glow{
+
+from{
+text-shadow:0 0 10px gold;
+}
+
+to{
+text-shadow:0 0 30px orange;
+}
+
+}
+
+/* Profile */
+
+.profile{
+
+width:220px;
+height:220px;
+border-radius:50%;
+object-fit:cover;
+margin-top:35px;
+border:6px solid white;
+box-shadow:0 0 30px cyan;
+
+}
+
+/* Button */
+
+button{
+
+margin-top:30px;
+padding:15px 35px;
+font-size:18px;
+border:none;
+border-radius:40px;
+cursor:pointer;
+background:#ff4081;
+color:white;
+transition:.3s;
+
+}
+
+button:hover{
+
+background:#ff1744;
+transform:scale(1.08);
+
+}
+
+/* Cards */
+
+.card,
+.gallery,
+.cake,
+.funny,
+.surprise{
+
+width:90%;
+max-width:900px;
+
+margin:40px auto;
+
+padding:35px;
+
+background:rgba(255,255,255,.08);
+
+backdrop-filter:blur(12px);
+
+border-radius:20px;
+
+box-shadow:0 10px 30px rgba(0,0,0,.4);
+
+}
+
+.card p,
+.funny p{
+
+font-size:20px;
+line-height:40px;
+
+}
+
+/* Gallery */
+
+.images{
+
+display:flex;
+justify-content:center;
+gap:20px;
+flex-wrap:wrap;
+margin-top:30px;
+
+}
+
+.images img{
+
+width:220px;
+height:220px;
+border-radius:20px;
+object-fit:cover;
+transition:.4s;
+box-shadow:0 0 20px rgba(255,255,255,.3);
+
+}
+
+.images img:hover{
+
+transform:scale(1.08);
+
+}
+
+/* Cake */
+
+.cake-box{
+
+font-size:120px;
+animation:bounce 2s infinite;
+
+}
+
+@keyframes bounce{
+
+0%{transform:translateY(0);}
+50%{transform:translateY(-20px);}
+100%{transform:translateY(0);}
+
+}
+
+/* Surprise */
+
+#gift{
+
+display:none;
+
+margin-top:30px;
+
+font-size:24px;
+
+color:#ffd700;
+
+line-height:45px;
+
+}
+
+/* Footer */
+
+footer{
+
+margin:60px 0 40px;
+
+font-size:20px;
+
+color:#d1d5db;
+
+}
+
+/* Scrollbar */
+
+::-webkit-scrollbar{
+
+width:10px;
+
+}
+
+::-webkit-scrollbar-thumb{
+
+background:#ff4081;
+border-radius:20px;
+
+}
+
+/* Responsive */
+
+@media(max-width:768px){
+
+.hero h1{
+
+font-size:38px;
+
+}
+
+.subtitle{
+
+font-size:18px;
+
+}
+
+.profile{
+
+width:170px;
+height:170px;
+
+}
+
+.images img{
+
+width:150px;
+height:150px;
+
+}
+
+.card p,
+.funny p{
+
+font-size:18px;
+line-height:32px;
+
+}
+
+button{
+
+width:90%;
+
+}
+
+.cake-box{
+
+font-size:90px;
+
+}
+
+}
